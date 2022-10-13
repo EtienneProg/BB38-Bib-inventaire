@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BrutButcher - Bib</title>
+      <!-- CSS only -->
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+      <nav class="nav-bar">
+            <div class="flex-item-nav">
+                  <div class="s-logo">
+                        <img src="img/brut_butcher_logo_blanc_slide_homepage_fonce_responsive.png" alt="">
+                  </div>
+                  <div class="nav-text">
+                        Inventaire Bib
+                  </div>
+            </div>
+           
+      </nav>
+
+      <div class="box-content">
+            <div class="box-center">
+                  <form class="p-top">
+                        <div class="title-select">Choisir la boisson :</div>
+                        <div class="button-box">
+                              <div class="button-item one">
+                                    <input type="radio" name="bib" id="coca" style="display:none;">
+                                    <label for="coca" class="btn-size"><img src="img/boisson-logo/coca-logo.png" alt=""></label>
+                              </div>
+                              <div class="button-item two">
+                                    <input type="radio" name="bib" id="coca-zero" style="display:none;">
+                                    <label for="coca-zero" class="btn-size"><img src="img/boisson-logo/logo-coca-zero.png" alt=""></label>
+                              </div>
+                              <div class="button-item three">
+                                    <input type="radio" name="bib" id="fuze" style="display:none;">
+                                    <label for="fuze" class="btn-size"><img src="img/boisson-logo/fuzetea-logo.png" alt=""></label>
+                              </div>
+                              <div class="button-item four">
+                                    <input type="radio" name="bib" id="sprite" style="display:none;">
+                                    <label for="sprite" class="btn-size"><img src="img/boisson-logo/sprite-logo.png" alt=""></label>
+                              </div>
+                              <div class="button-item five">
+                                    <input type="radio" name="bib" id="fanta" style="display:none;">
+                                    <label for="fanta" class="btn-size"><img src="img/boisson-logo/fanta-logo.png" alt=""></label>
+                              </div>
+                              <div class="button-item six">
+                                    <input type="radio" name="bib" id="tropico" style="display:none;">
+                                    <label for="tropico" class="btn-size"><img src="img/boisson-logo/tropico-logo.png" alt=""></label>
+                              </div>
+                        </div>
+                        <div class="row-flex mt">
+                             <div class="subtitle-select flex-1">Avec Carton :<span class="popup">*</span></div>
+                              <div class="switch flex-2">
+                                    <div class="switch-button">
+                                          <input class="switch-button-checkbox" type="checkbox" id="carton_btn"></input>
+                                          <label class="switch-button-label" for=""><span class="switch-button-label-span">Oui</span></label>
+                                    </div>
+                              </div> 
+                        </div>                        
+                        <div class="title-select mt">Poids du Bib :</div>
+                        <div class="mt">
+                             <input type="number" min="0" placeholder="Saisir le poids en g" class="poids_bib" id="poids_bib" required> 
+                        </div>
+                        <div class="mt">
+                              <input type="button" value="Calculer" onclick="calculBib()" id="calcul_bib">   
+                        </div>
+                        <div class="title-result mt">Résultat du Bib :</div>
+                        <div class="value-result" id="result_box">0</div>
+                        
+                  </form>
+            </div>
+            <div class="info-author">&#9432;</div>
+      </div>
+      
+      <div class="erreur_size"><div class="text-err">Taille d'écran indispoinible</div></div>
+
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+</body>
+</html>
